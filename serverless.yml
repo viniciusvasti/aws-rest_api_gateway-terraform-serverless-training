@@ -1,0 +1,37 @@
+service: aws-rest-api-sms-sender
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  apiGateway:
+    restApiId: wvnnv69jzf
+    restApiRootResourceId: 0s0ivf
+  region: us-east-1
+  iamManagedPolicies:
+    - 'arn:aws:iam::aws:policy/AmazonSNSFullAccess'
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          method: POST
+          path: /sms
+
+package:
+  # excludes are added first
+  exclude:
+    - .vscode/**
+    - .editorconfig
+    - .terraform
+    - terraform.*
+    - .env
+    - .env.**
+    - .gitignore
+    - .git
+    - README.md
+    - yarn.log
+    - yarn.lock
+    - package-lock.json
+    - .prettierrc
+    - .eslintrc.js

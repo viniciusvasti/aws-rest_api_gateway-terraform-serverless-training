@@ -1,0 +1,30 @@
+{
+  "name": "aws-rest_api_gateway-terraform-serverless-training",
+  "version": "1.0.0",
+  "description": "Exemplo de API Rest com AWS API Gateway, Terraform e Serverless Framework",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.673.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusvasti/aws-rest_api_gateway-terraform-serverless-training.git"
+  },
+  "keywords": [
+    "aws",
+    "api",
+    "gateway",
+    "serverless",
+    "terraform"
+  ],
+  "author": "Vinicius A. dos Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusvasti/aws-rest_api_gateway-terraform-serverless-training/issues"
+  },
+  "homepage": "https://github.com/viniciusvasti/aws-rest_api_gateway-terraform-serverless-training#readme"
+}

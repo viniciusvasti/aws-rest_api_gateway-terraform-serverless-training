@@ -1,6 +1,6 @@
 # api-gateway.tf
 resource "aws_api_gateway_rest_api" "my_api_gateway" {
-  name        = "Minha API"
+  name        = "My API"
   description = "AWS Rest API example with Terraform"
   endpoint_configuration {
     types = ["REGIONAL"]

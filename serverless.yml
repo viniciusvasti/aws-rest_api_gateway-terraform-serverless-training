@@ -1,4 +1,4 @@
-service: aws-rest-api-sms-sender
+service: sms-sender-api
 
 provider:
   name: aws
